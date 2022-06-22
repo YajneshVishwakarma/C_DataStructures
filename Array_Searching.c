@@ -23,7 +23,7 @@ void binarySearch(int temp)
 {
     printf("\nSearching the array using Binary search\n");
     int l=0,r=size-1,mid;
-    
+    //
     printf("\nEnter the element to search\n");
     scanf("%d",&temp);
     while(l<=r)
