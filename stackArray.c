@@ -1,7 +1,10 @@
 #include<stdio.h>
 #include<stdlib.h>
+
 #define size 5
+
 int top=-1,stack[size];
+
 void push()
 {
     int data;
@@ -15,6 +18,7 @@ void push()
     stack[top]=data;
     }
 }
+
 void pop()
 {
     if(top==-1)
@@ -22,6 +26,7 @@ void pop()
     else
         top--;
 }
+
 void peek()
 {
     if(top==-1)
@@ -31,6 +36,7 @@ void peek()
         printf("%d\n",stack[top]);
     }
 }
+
 void display()
 {
     printf("Elements are\n");
@@ -39,6 +45,7 @@ void display()
     printf("\n");
     
 }
+
 void main()
 {
     int ch;
@@ -46,8 +53,10 @@ void main()
     while(1)
     {
         printf("Enter the choice\n");
+        
         printf("1)push data into stack\n2)Pop the data\n3)Peek the stack\n4)Display the data\n5)Exit\n");
         scanf("%d",&ch);
+        
         switch(ch)
         {
             case 1:
